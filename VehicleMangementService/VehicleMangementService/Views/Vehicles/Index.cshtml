@@ -1,0 +1,161 @@
+﻿@model IEnumerable<VehicleMangementService.Models.Vehicle>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LicenseNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Power)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TopSpeed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.kmPerHour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Torque)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CO2Emissions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EuroEmissStand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MilesPerTank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Height)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wheelbase)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TurningCircile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EngineSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cylinders)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valves)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FuelType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transmission)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GearBox)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Drivertrain)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Length)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LicenseNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Power)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TopSpeed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kmPerHour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Torque)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CO2Emissions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EuroEmissStand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MilesPerTank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Height)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Wheelbase)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TurningCircile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EngineSize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cylinders)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valves)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FuelType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Transmission)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GearBox)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Drivertrain)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Length)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VehicleId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.VehicleId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.VehicleId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

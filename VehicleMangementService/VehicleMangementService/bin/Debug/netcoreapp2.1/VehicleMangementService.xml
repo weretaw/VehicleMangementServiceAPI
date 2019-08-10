@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VehicleMangementService</name>
+    </assembly>
+    <members>
+        <member name="M:VehicleMangementService.Controllers.VehiclesController.GetVehicles">
+            <summary>
+            This is get all vehicles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VehicleMangementService.Controllers.VehiclesController.GetVehicle(System.Int32)">
+            <summary>
+            This get by specific ID
+            </summary>
+            <param name="id">Mandatory</param>
+            <returns></returns>
+        </member>
+        <member name="M:VehicleMangementService.Controllers.VehiclesController.PostCategory(VehicleMangementService.Models.Vehicle)">
+            <summary>
+            This is post method
+            </summary>
+            <param name="vehicle"></param>
+            <returns>Vehicle</returns>
+        </member>
+    </members>
+</doc>
